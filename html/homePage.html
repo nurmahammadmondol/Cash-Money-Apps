@@ -19,13 +19,17 @@
       <div class="camera"></div>
       <div class="display">
         <div class="artboard artboard-demo phone-2">
+          <!-- Product name  -->
+          <div>
+            <p class="text-cyan-300 mb-16">Cash <span class="text-cyan-600">Money</span></p>
+          </div>
 
           <!-- Total Money Details start-->
           <div class="flex justify-between w-11/12">
             <div>
               <h3>Total Balance</h3>
               <div class="text-xl font-extrabold flex">$
-                <h2 id="totalBalance" class="text-2xl">45000</h2>
+                <h2 id="totalBalance" class="text-2xl">45000.00</h2>
               </div>
             </div>
 
@@ -117,12 +121,44 @@
                 </div>
 
                 <div class="form-control mt-6">
-                  <button id="AddBalanceBtn" class="btn btn-primary">Add Balance</button>
+                  <button id="AddBalanceBtn" class="btn btn-info">Add Balance</button>
                 </div>
 
               </form>
             </div>
 
+            <!-- Cash Out From  -->
+            <div id="CashOutFrom" class="hidden">
+              <form class="">
+
+                <div class="form-control">
+                  <label class="label">
+                    <span class="label-text">Agent Number</span>
+                  </label>
+                  <input id="AgentNumber" type="text" placeholder="Number 11 digit" class="input input-bordered"
+                    required />
+                </div>
+                <div class="form-control">
+                  <label class="label">
+                    <span class="label-text">Cash Out Amount</span>
+                  </label>
+                  <input id="cash-out-amount" type="text" placeholder="Amount" class="input input-bordered" required />
+                </div>
+
+                <div class="form-control">
+                  <label class="label">
+                    <span class="label-text">Pin Number</span>
+                  </label>
+                  <input id="cash-out-pin" type="password" placeholder="Enter 4 digit pin" class="input input-bordered"
+                    required />
+                </div>
+
+                <div class="form-control mt-6">
+                  <button id="CashOutBalanceBtn" class="btn btn-info">Cash Out</button>
+                </div>
+
+              </form>
+            </div>
 
 
           </div>

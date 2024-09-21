@@ -26,10 +26,16 @@ function HiddenFile(id) {
   const Home_page = document.getElementById('HomePage').classList.add('hidden');
 
   // All From
+  // 1 add money
   const AddMoneyFrom = document
     .getElementById('AddMoneyFrom')
     .classList.add('hidden');
 
+  // 2 cash out
+  const CashOutFrom = document
+    .getElementById('CashOutFrom')
+    .classList.add('hidden');
+
   // UnHidden type
-  const mainBtn = document.getElementById(id).classList.remove('hidden');
+  const Unhidden = document.getElementById(id).classList.remove('hidden');
 }
