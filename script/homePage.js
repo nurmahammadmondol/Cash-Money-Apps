@@ -19,6 +19,23 @@ document
     } else {
       alert('Error! Pin number not mach.');
     }
+
+    // Transaction list
+    const AddMoneyDetails = document.createElement('div');
+    AddMoneyDetails.classList.add(
+      'bg-green-400',
+      'px-2',
+      'py-1',
+      'my-2',
+      'rounded-md'
+    );
+
+    AddMoneyDetails.innerText = `Add Money:-
+    Cash in: ${AddTk} tk.  Total Balance: ${AddTotalBalance} tk. `;
+
+    document
+      .getElementById('Transaction-file-list')
+      .appendChild(AddMoneyDetails);
   });
 // Add Button From end //
 
@@ -86,3 +103,19 @@ document
   });
 
 // Mobile Recharge End //
+
+// Transaction File Start //
+
+document
+  .getElementById('TransactionBtn')
+  .addEventListener('click', function () {
+    const TransactionDetailsFile = HiddenFile('Transaction-file');
+  });
+
+document
+  .getElementById('TransactionList-Back-Btn')
+  .addEventListener('click', function () {
+    const TransactionListBtn = HiddenFile('HomePage');
+  });
+
+// Transaction File End //

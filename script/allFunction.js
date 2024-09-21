@@ -41,6 +41,11 @@ function HiddenFile(id) {
     .getElementById('MobileRechargeFrom')
     .classList.add('hidden');
 
+  // 4 Transaction - file
+  const TransactionFile = document
+    .getElementById('Transaction-file')
+    .classList.add('hidden');
+
   // UnHidden type
   const Unhidden = document.getElementById(id).classList.remove('hidden');
 }
