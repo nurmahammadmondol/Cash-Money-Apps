@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home Page cash money</title>
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+
+  <main class="flex justify-center">
+    <div class="mockup-phone">
+      <div class="camera"></div>
+      <div class="display">
+        <div class="artboard artboard-demo phone-2">
+
+          <!-- Total Money Details start-->
+          <div class="flex justify-between w-11/12">
+            <div>
+              <h3>Total Balance</h3>
+              <div class="text-xl font-extrabold flex">$
+                <h2 id="totalBalance" class="text-2xl">45000</h2>
+              </div>
+            </div>
+
+            <div>
+              <button class="btn btn-outline "><i class="fa-solid fa-right-from-bracket rotate-180"></i>Log Out</button>
+            </div>
+          </div>
+          <!-- Total Money Details end-->
+
+          <div class="divider"></div>
+          <div class="divider"></div>
+
+          <!-- Home Page of interface -->
+          <div id="HomePage" class="w-11/12 mx-auto">
+            <!-- Tittle for this page start  -->
+            <div class="">
+              <h2 class="text-xl font-bold">🔥 Welcome to Payooo!</h2>
+              <p>Enjoy easy and convenient financial services with us. Cashout charge is low.</p>
+            </div>
+            <!-- Tittle for this page end  -->
+
+            <!-- Click all Button start  -->
+            <div class=" grid grid-cols-3 gap-2 my-5">
+              <!-- Box-1 :Add Money  -->
+              <button id="AddMoney" class="btn h-20">
+                <img class="h-12 w-14 mx-auto" src="../photo/addMoney.png" alt="">
+                <div class="text-center text-sm">Add Money</div>
+              </button>
+
+              <!-- Box-2 :Cash Out  -->
+              <button id="Cash-Out" class="btn h-20">
+                <img class="h-11 w-12 mx-auto" src="../photo/cashOut.png" alt="">
+                <div class="text-center text-sm">Cash Out</div>
+              </button>
+
+              <!-- Box-3 :Transfer Money  -->
+
+              <button id="Transfer-Money" class="btn h-20">
+                <img class="h-10 w-12 mx-auto" src="../photo/TransferMoney.png" alt="">
+                <div class="text-center text-xs">Transfer Money</div>
+              </button>
+
+
+              <!-- Box-4 :Get Bonus  -->
+              <button id="Get-Bonus" class="btn h-20">
+                <img class="h-10 w-14 mx-auto" src="../photo/Get Bonus.png" alt="">
+                <div class="text-center text-sm">Get Bonus</div>
+              </button>
+
+
+              <!-- Box-5 :Pay Bill  -->
+              <button id="Pay-Bill" class="btn h-20">
+                <img class="h-10 w-14 mx-auto" src="../photo/Pay Bill.png" alt="">
+                <div class="text-center text-sm">Pay Bill</div>
+              </button>
+
+
+              <!-- Box-6 :Transaction  -->
+              <button id="Transaction" class="btn h-20">
+                <img class="h-10 w-12 mx-auto" src="../photo/Transactions.png" alt="">
+                <div class="text-center text-sm">Transaction</div>
+              </button>
+
+            </div>
+            <!-- Click all Button end -->
+          </div>
+
+
+          <!-- All From  -->
+          <div class="w-10/12">
+            <!-- Add Money From  -->
+            <div id="AddMoneyFrom" class="hidden">
+              <form class="">
+
+                <div class="form-control">
+                  <label class="label">
+                    <span class="label-text">Add to Amount</span>
+                  </label>
+                  <input id="add-amount" type="text" placeholder="Amount" class="input input-bordered" required />
+                </div>
+
+                <div class="form-control">
+                  <label class="label">
+                    <span class="label-text">Pin Number</span>
+                  </label>
+                  <input id="add-amount-pin" type="password" placeholder="Enter 4 digit pin"
+                    class="input input-bordered" required />
+
+                </div>
+
+                <div class="form-control mt-6">
+                  <button id="AddBalanceBtn" class="btn btn-primary">Add Balance</button>
+                </div>
+
+              </form>
+            </div>
+
+
+
+          </div>
+
+
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <script src="../script/allFunction.js"></script>
+  <script src="../script/homePage.js"></script>
+
+</body>
+
+</html>

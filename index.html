@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cash Money</title>
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+
+<body>
+  <main class="flex justify-center">
+
+    <div class="mockup-phone">
+      <div class="camera"></div>
+      <div class="display">
+        <div class="artboard artboard-demo phone-2">
+
+          <!-- Logo Photo  -->
+          <div class="h-2/6">
+            <img class="h-full w-full" src="photo/payoo.png" alt="Logo Photo">
+          </div>
+          <!-- Product name  -->
+          <div>
+            <p class="text-cyan-300">Cash <span class="text-cyan-600">Money</span></p>
+          </div>
+
+          <!-- Login From Start -->
+          <div class="card  w-full max-w-sm ">
+            <form class="card-body">
+              <div class="form-control">
+                <label class="label">
+                  <span class="label-text">Phone Number</span>
+                </label>
+                <input id="phoneNumber" type="text" placeholder="your number" class="input input-bordered" required />
+              </div>
+              <div class="form-control">
+                <label class="label">
+                  <span class="label-text">Pin Number</span>
+                </label>
+                <input id="pinNumber" type="password" placeholder="Enter 4 digit pin" class="input input-bordered"
+                  required />
+
+              </div>
+              <div class="form-control mt-6">
+                <button id="loginBtn" class="btn btn-info text-white">Login</button>
+              </div>
+            </form>
+          </div>
+          <!-- Login From End -->
+
+
+
+        </div>
+      </div>
+    </div>
+  </main>
+
+
+
+
+  <script src="script/allFunction.js"></script>
+  <script src="script/loginPage.js"></script>
+
+</body>
+
+</html>
