@@ -36,6 +36,11 @@ function HiddenFile(id) {
     .getElementById('CashOutFrom')
     .classList.add('hidden');
 
+  // 3 Mobile Recharge
+  const MobileRechargeFrom = document
+    .getElementById('MobileRechargeFrom')
+    .classList.add('hidden');
+
   // UnHidden type
   const Unhidden = document.getElementById(id).classList.remove('hidden');
 }

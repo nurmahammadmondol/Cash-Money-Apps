@@ -21,7 +21,7 @@
         <div class="artboard artboard-demo phone-2">
           <!-- Product name  -->
           <div>
-            <p class="text-cyan-300 mb-16">Cash <span class="text-cyan-600">Money</span></p>
+            <p class="text-cyan-300 mb-14">Cash <span class="text-cyan-600">Money</span></p>
           </div>
 
           <!-- Total Money Details start-->
@@ -65,33 +65,41 @@
                 <div class="text-center text-sm">Cash Out</div>
               </button>
 
-              <!-- Box-3 :Transfer Money  -->
+              <!-- Box-3 :Mobile Recharge  -->
 
-              <button id="Transfer-Money" class="btn h-20">
-                <img class="h-10 w-12 mx-auto" src="../photo/TransferMoney.png" alt="">
-                <div class="text-center text-xs">Transfer Money</div>
+              <button id="Mobile-Recharge" class="btn h-20">
+                <img class="h-8 w-10 mx-auto" src="../photo/Mobile Recharge.png" alt="">
+                <div class="text-center text-xs">Mobile Recharge</div>
               </button>
 
 
-              <!-- Box-4 :Get Bonus  -->
+              <!-- Box-4 :Transfer Money  -->
+              <button id="Transaction" class="btn h-20 grid col-span-2 ">
+                <img class="h-12 w-24 mx-auto" src="../photo/Transfer Money.png" alt="">
+                <div class="text-center text-sm">Transfer Money</div>
+              </button>
+
+              <!-- Box-5 :Get Bonus  -->
               <button id="Get-Bonus" class="btn h-20">
                 <img class="h-10 w-14 mx-auto" src="../photo/Get Bonus.png" alt="">
                 <div class="text-center text-sm">Get Bonus</div>
               </button>
 
 
-              <!-- Box-5 :Pay Bill  -->
-              <button id="Pay-Bill" class="btn h-20">
+              <!-- Box-6 :Pay Bill  -->
+              <button id="Pay-Bill" class="btn h-20 ">
                 <img class="h-10 w-14 mx-auto" src="../photo/Pay Bill.png" alt="">
                 <div class="text-center text-sm">Pay Bill</div>
               </button>
 
 
-              <!-- Box-6 :Transaction  -->
-              <button id="Transaction" class="btn h-20">
-                <img class="h-10 w-12 mx-auto" src="../photo/Transactions.png" alt="">
-                <div class="text-center text-sm">Transaction</div>
+              <!-- Box-7 :Transaction  -->
+              <button id="Transaction" class="btn h-20 grid col-span-2 ">
+                <img class="h-12 w-14 mx-auto" src="../photo/Transactions.png" alt="">
+                <div class="text-center text-sm">Transactions</div>
               </button>
+
+
 
             </div>
             <!-- Click all Button end -->
@@ -121,7 +129,7 @@
                 </div>
 
                 <div class="form-control mt-6">
-                  <button id="AddBalanceBtn" class="btn btn-info">Add Balance</button>
+                  <button id="AddBalanceBtn" class="btn btn-info text-white">Add Balance</button>
                 </div>
 
               </form>
@@ -154,11 +162,49 @@
                 </div>
 
                 <div class="form-control mt-6">
-                  <button id="CashOutBalanceBtn" class="btn btn-info">Cash Out</button>
+                  <button id="CashOutBalanceBtn" class="btn btn-info text-white">Cash Out</button>
                 </div>
 
               </form>
             </div>
+
+
+            <!-- Mobile Recharge From  -->
+            <div id="MobileRechargeFrom" class="hidden">
+              <form class="">
+
+                <div class="form-control">
+                  <label class="label">
+                    <span class="label-text">Phone Number</span>
+                  </label>
+                  <input id="RechargePhoneNumber" type="text" placeholder="Number 11 digit" class="input input-bordered"
+                    required />
+                </div>
+                <div class="form-control">
+                  <label class="label">
+                    <span class="label-text">Mobile Recharge</span>
+                  </label>
+                  <input id="MobileRecharge-Amount" type="text" placeholder="Amount" class="input input-bordered"
+                    required />
+                </div>
+
+                <div class="form-control">
+                  <label class="label">
+                    <span class="label-text">Pin Number</span>
+                  </label>
+                  <input id="MobileRecharge-pin" type="password" placeholder="Enter 4 digit pin"
+                    class="input input-bordered" required />
+                </div>
+
+                <div class="form-control mt-6">
+                  <button id="Mobile Recharge-Btn" class="btn btn-info text-white">Mobile Recharge</button>
+                </div>
+
+              </form>
+            </div>
+
+
+
 
 
           </div>

@@ -22,7 +22,7 @@ document
   });
 // Add Button From end //
 
-// Cash Out Start
+// Cash Out Start //
 document.getElementById('Cash-Out').addEventListener('click', function () {
   const cashOutFrom = HiddenFile('CashOutFrom');
 });
@@ -50,3 +50,39 @@ document
       alert('Error!');
     }
   });
+
+// Cash Out End //
+
+// Mobile Recharge Start //
+document
+  .getElementById('Mobile-Recharge')
+  .addEventListener('click', function () {
+    const Mobile_recharge = HiddenFile('MobileRechargeFrom');
+  });
+
+document
+  .getElementById('Mobile Recharge-Btn')
+  .addEventListener('click', function (event) {
+    event.preventDefault();
+
+    const T_MR_Balance = inputValueTotalBalanceById('totalBalance');
+    const RechargePhoneNumber = inputValueNumberById('RechargePhoneNumber');
+    const MobileRechargeAmount = inputValueAmountById('MobileRecharge-Amount');
+    const MobileRechargePin = inputValuePinById('MobileRecharge-pin');
+
+    const MobileRechargeTotalBalance = T_MR_Balance - MobileRechargeAmount;
+
+    if (
+      RechargePhoneNumber === 11 &&
+      MobileRechargeAmount <= T_MR_Balance &&
+      MobileRechargePin === '1234'
+    ) {
+      document.getElementById('totalBalance').innerText =
+        MobileRechargeTotalBalance;
+      const Home_page = HiddenFile('HomePage');
+    } else {
+      alert('Error!');
+    }
+  });
+
+// Mobile Recharge End //
