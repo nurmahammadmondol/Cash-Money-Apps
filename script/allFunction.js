@@ -24,6 +24,9 @@ function inputValueAmountById(amount) {
 function HiddenFile(id) {
   //All Button
   const Home_page = document.getElementById('HomePage').classList.add('hidden');
+  const dividerHide = document
+    .getElementById('dividerHide')
+    .classList.add('hidden');
 
   // All From
   // 1 add money
@@ -44,6 +47,11 @@ function HiddenFile(id) {
   // 4 Transaction - file
   const TransactionFile = document
     .getElementById('Transaction-file')
+    .classList.add('hidden');
+
+  // Transfer Money From //
+  const TransferMoneyFrom = document
+    .getElementById('TransferMoneyFrom')
     .classList.add('hidden');
 
   // UnHidden type

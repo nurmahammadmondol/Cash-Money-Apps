@@ -34,13 +34,16 @@
             </div>
 
             <div>
-              <button class="btn btn-outline "><i class="fa-solid fa-right-from-bracket rotate-180"></i>Log Out</button>
+              <a href="../index.html">
+                <button id="LogOutBtn" class="btn btn-outline"><i
+                    class="fa-solid fa-right-from-bracket rotate-180"></i>Log Out</button>
+              </a>
             </div>
           </div>
           <!-- Total Money Details end-->
 
           <div class="divider"></div>
-          <div class="divider"></div>
+          <div id="dividerHide" class="divider"></div>
 
           <!-- Home Page of interface -->
           <div id="HomePage" class="w-11/12 mx-auto">
@@ -110,11 +113,27 @@
           <div class="w-10/12">
             <!-- Add Money From  -->
             <div id="AddMoneyFrom" class="hidden">
+
+              <div class="flex items-center gap-3 mb-8">
+                <button id="Add-Money-from-Back-Btn" class="">
+                  <i class="fa-solid fa-arrow-up -rotate-90 text-cyan-500"></i>
+                </button>
+                <h4 class="font-bold">Add Money</h4>
+              </div>
+
               <form class="">
 
                 <div class="form-control">
                   <label class="label">
-                    <span class="label-text">Add to Amount</span>
+                    <span class="label-text">Bank Account Number</span>
+                  </label>
+                  <input id="Bank-Account-Number" type="text" placeholder="Enter 11 digit account number"
+                    class="input input-bordered" required />
+                </div>
+
+                <div class="form-control">
+                  <label class="label">
+                    <span class="label-text">Amount to Add</span>
                   </label>
                   <input id="add-amount" type="text" placeholder="Amount" class="input input-bordered" required />
                 </div>
@@ -137,6 +156,14 @@
 
             <!-- Cash Out From  -->
             <div id="CashOutFrom" class="hidden">
+
+              <div class="flex items-center gap-3 mb-8">
+                <button id="Cash-out-from-Back-Btn" class="">
+                  <i class="fa-solid fa-arrow-up -rotate-90 text-cyan-500"></i>
+                </button>
+                <h4 class="font-bold">Cash Out</h4>
+              </div>
+
               <form class="">
 
                 <div class="form-control">
@@ -171,6 +198,14 @@
 
             <!-- Mobile Recharge From  -->
             <div id="MobileRechargeFrom" class="hidden">
+
+              <div class="flex items-center gap-3 mb-8">
+                <button id="Mobile-Recharge-from-Back-Btn" class="">
+                  <i class="fa-solid fa-arrow-up -rotate-90 text-cyan-500"></i>
+                </button>
+                <h4 class="font-bold">Mobile Recharge</h4>
+              </div>
+
               <form class="">
 
                 <div class="form-control">
@@ -204,17 +239,60 @@
             </div>
 
 
+            <!-- Transfer Money From  -->
+            <div id="TransferMoneyFrom" class="hidden">
+
+              <div class="flex items-center gap-3 mb-8">
+                <button id="Transfer-Money-from-Back-Btn" class="">
+                  <i class="fa-solid fa-arrow-up -rotate-90 text-cyan-500"></i>
+                </button>
+                <h4 class="font-bold">Transfer Money</h4>
+              </div>
+
+              <form class="">
+
+                <div class="form-control">
+                  <label class="label">
+                    <span class="label-text">User Account Number</span>
+                  </label>
+                  <input id="UserAccountNumber" type="text" placeholder="Enter 11 digit number"
+                    class="input input-bordered" required />
+                </div>
+                <div class="form-control">
+                  <label class="label">
+                    <span class="label-text">Amount</span>
+                  </label>
+                  <input id="TransferMoneyAmount" type="text" placeholder="Enter amount to transfer"
+                    class="input input-bordered" required />
+                </div>
+
+                <div class="form-control">
+                  <label class="label">
+                    <span class="label-text">Pin Number</span>
+                  </label>
+                  <input id="TransferMoneyPin" type="password" placeholder="Enter 4 digit pin"
+                    class="input input-bordered" required />
+                </div>
+
+                <div class="form-control mt-6">
+                  <button id="TransferMoneyBtn" class="btn btn-info text-white">Transfer Money</button>
+                </div>
+
+              </form>
+            </div>
+
+
             <!-- Transaction list -->
             <div id="Transaction-file" class="hidden">
 
               <div class="flex items-center gap-3">
-                <button id="TransactionList-Back-Btn" class="btn btn-outline btn-accent py-1 text-white">
-                  <i class="fa-solid fa-arrow-up -rotate-90"></i>
-                  Back</button>
-                <h4 class="font-bold textc">Transactions List----</h4>
+                <button id="TransactionList-Back-Btn" class="">
+                  <i class="fa-solid fa-arrow-up -rotate-90 text-cyan-500"></i>
+                </button>
+                <h4 class="font-bold textc">Transactions History</h4>
               </div>
 
-              <div id="Transaction-file-list" class="mt-3 overflow-auto h-80">
+              <div id="Transaction-file-list" class="mt-3 overflow-auto h-80 ">
 
               </div>
 
@@ -232,6 +310,7 @@
 
   <script src="../script/allFunction.js"></script>
   <script src="../script/homePage.js"></script>
+  <script src="../script/loginPage.js"></script>
 
 </body>
 
